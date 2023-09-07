@@ -15,7 +15,7 @@ onload = async () => {
             [{ opacity: 1}, { opacity: 0 }],
             { fill: 'forwards', duration: 300 }
         )
-        setTimeout(() => setInterval(() => player.playVideo(), 100), 200)
+        setTimeout(() => setInterval(() => (player.playVideo(), d.body.focus()), 100), 200)
     }
 
     await new Promise(res => setTimeout(() => { res() }, 300))
@@ -43,7 +43,7 @@ onload = async () => {
                     setTimeout(() => { bar.style.setProperty('--percentage', '30%') }, 200)
                     setTimeout(() => { bar.style.setProperty('--percentage', '70%') }, 400)
                     setTimeout(() => { bar.style.setProperty('--percentage', '100%') }, 450)
-                    setTimeout(() => { bar.style.height = '0', text.innerText = 'beta', d.body.focus(), startVideo() }, 475)
+                    setTimeout(() => { bar.style.height = '0', text.innerText = 'beta', startVideo() }, 475)
                 }, 600)
             }
         }, assets.length * 2  * i)
