@@ -23,7 +23,7 @@ body > * {
 }
 #initial-loading .logo {
     display: block;
-    font-size: 100vw;
+    font-size: 50vw;
     width: min(400px, calc(100% - 4rem)); aspect-ratio: 1 / 1;
     opacity: .8;
     background: repeating-linear-gradient(45deg, var(--c2) 0, var(--c3) 1em, var(--c2) 2em); background-size: 2.8284em 2.8284em;
