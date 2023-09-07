@@ -51,6 +51,4 @@ body > * {
     #initial-loading .text { font-size: 1em }
 }
 
-#player {
-    max-width: calc(100vw - 2em) !important;
-}
+#player { max-width: calc(100vw - 2em) !important; max-height: calc(100vh - 2em) !important }
